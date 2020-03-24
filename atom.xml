@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-24T02:49:57.624Z</updated>
+  <updated>2020-03-24T08:07:54.817Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>凸优化</title>
+    <link href="http://yoursite.com/2020/03/24/%E5%87%B8%E4%BC%98%E5%8C%96/"/>
+    <id>http://yoursite.com/2020/03/24/%E5%87%B8%E4%BC%98%E5%8C%96/</id>
+    <published>2020-03-24T08:04:51.000Z</published>
+    <updated>2020-03-24T08:07:54.817Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="几种不同的函数"><a href="#几种不同的函数" class="headerlink" title="几种不同的函数"></a>几种不同的函数</h1><h2 id="凸函数"><a href="#凸函数" class="headerlink" title="凸函数"></a>凸函数</h2><p>1.</p><p>2.</p><h2 id="拉帕朗斯函数"><a href="#拉帕朗斯函数" class="headerlink" title="拉帕朗斯函数"></a>拉帕朗斯函数</h2><h2 id="平滑"><a href="#平滑" class="headerlink" title="平滑"></a>平滑</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;几种不同的函数&quot;&gt;&lt;a href=&quot;#几种不同的函数&quot; class=&quot;headerlink&quot; title=&quot;几种不同的函数&quot;&gt;&lt;/a&gt;几种不同的函数&lt;/h1&gt;&lt;h2 id=&quot;凸函数&quot;&gt;&lt;a href=&quot;#凸函数&quot; class=&quot;headerlink&quot; title=
+      
+    
+    </summary>
+    
+    
+      <category term="ml" scheme="http://yoursite.com/categories/ml/"/>
+    
+    
+      <category term="nlp" scheme="http://yoursite.com/tags/nlp/"/>
+    
+      <category term="ml" scheme="http://yoursite.com/tags/ml/"/>
+    
+  </entry>
   
   <entry>
     <title>study</title>
