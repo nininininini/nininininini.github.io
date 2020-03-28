@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-24T08:07:54.817Z</updated>
+  <updated>2020-03-28T15:52:50.780Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线性规划</title>
+    <link href="http://yoursite.com/2020/03/28/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/"/>
+    <id>http://yoursite.com/2020/03/28/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/</id>
+    <published>2020-03-28T14:52:23.000Z</published>
+    <updated>2020-03-28T15:52:50.780Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="定义：线性约束条件下线性目标函数的极值问题（最优决策）"><a href="#定义：线性约束条件下线性目标函数的极值问题（最优决策）" class="headerlink" title="定义：线性约束条件下线性目标函数的极值问题（最优决策）"></a>定义：线性约束条件下线性目标函数的极值问题（最优决策）</h1><h1 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h1><ol><li>可行域总是一个凸集</li><li>目标函数的一个可行解（包括最优解）一定出现在可行域的一个顶点上</li></ol><blockquote><p>有限的资源和若干竞争约束下的目标函数最大或最小化的最优策略</p></blockquote><blockquote><p>线性规划可以写成标准形式</p><p>松弛型—加入变量让不等约束变为等式约束</p></blockquote><p><img src="/" alt="单纯形算法" class="lazyload" data-src="http://m.qpic.cn/psc?/V11AnIAP0yjLkE/cX4Vyn98zHAGUajflo5h*OEd6dZYRWy2HDnRhX.f2DMcLieHxFHm4XyBztK.jwv47sCWZtSikQb21e2IUgfikg!!/b&bo=oAU4BAAAAAARB6k!&rf=viewer_4"></p><blockquote><p>用约束比较强的去替换 （常数项最小？）</p><p>若目标函数没有系数为负数的项了，说明无法再继续减小目标函数，算法达到了收敛，停止转动</p></blockquote><h2 id="避免退化–bland规则"><a href="#避免退化–bland规则" class="headerlink" title="避免退化–bland规则"></a>避免退化–bland规则</h2><p>原因：替入替出变量选择不当，算法循环旋转不停止。</p><p>退化是导致单纯算法不会收敛的唯一原因</p><h3 id="bland规则：-在选择替入变量和替出变量的时候，总是选择满足条件的下标最小值"><a href="#bland规则：-在选择替入变量和替出变量的时候，总是选择满足条件的下标最小值" class="headerlink" title="bland规则： 在选择替入变量和替出变量的时候，总是选择满足条件的下标最小值"></a>bland规则： 在选择替入变量和替出变量的时候，总是选择满足条件的下标最小值</h3><p><img src="/" alt="完整步骤" class="lazyload" data-src="http://m.qpic.cn/psc?/V11AnIAP0yjLkE/cX4Vyn98zHAGUajflo5h*PpxxDMvHFYmyNlhu5VNEMas.UegDCKPY6Hz8z49ISfuZ19AKd.1hzTRNz7xOXye2g!!/b&bo=oAU4BAAAAAARB6k!&rf=viewer_4"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;定义：线性约束条件下线性目标函数的极值问题（最优决策）&quot;&gt;&lt;a href=&quot;#定义：线性约束条件下线性目标函数的极值问题（最优决策）&quot; class=&quot;headerlink&quot; title=&quot;定义：线性约束条件下线性目标函数的极值问题（最优决策）&quot;&gt;&lt;/a&gt;定义：线性
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>凸优化</title>
