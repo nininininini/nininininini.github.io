@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-29T08:18:11.122Z</updated>
+  <updated>2020-03-29T15:47:06.087Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,62 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>句子相似度</title>
+    <link href="http://yoursite.com/2020/03/29/%E5%8F%A5%E5%AD%90%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
+    <id>http://yoursite.com/2020/03/29/%E5%8F%A5%E5%AD%90%E7%9B%B8%E4%BC%BC%E5%BA%A6/</id>
+    <published>2020-03-29T15:38:13.000Z</published>
+    <updated>2020-03-29T15:47:06.087Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="句子相似度"><a href="#句子相似度" class="headerlink" title="句子相似度"></a>句子相似度</h1><ol><li><p>余弦相似度</p></li><li><p>欧式距离</p></li><li><p>绝对距离</p></li><li><p>minkobxki pister   p次方 1/p</p></li><li><p>mahalanlkis distance   映射到另外一个空间，转换的方法是线性的</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200329-3.jpg"></p></li><li><p>kernel distance：  kernal funtion 之后的距离</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;句子相似度&quot;&gt;&lt;a href=&quot;#句子相似度&quot; class=&quot;headerlink&quot; title=&quot;句子相似度&quot;&gt;&lt;/a&gt;句子相似度&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;余弦相似度&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;欧式距离&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;绝对距离
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>拼写错误纠正</title>
+    <link href="http://yoursite.com/2020/03/29/%E6%8B%BC%E5%86%99%E9%94%99%E8%AF%AF%E7%BA%A0%E6%AD%A3/"/>
+    <id>http://yoursite.com/2020/03/29/%E6%8B%BC%E5%86%99%E9%94%99%E8%AF%AF%E7%BA%A0%E6%AD%A3/</id>
+    <published>2020-03-29T13:51:25.000Z</published>
+    <updated>2020-03-29T15:10:13.022Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="错误种类"><a href="#错误种类" class="headerlink" title="错误种类"></a>错误种类</h2><h3 id="错别字"><a href="#错别字" class="headerlink" title="错别字"></a>错别字</h3><ol><li><p>改过来</p></li><li><p>寻找：</p></li><li><p>基于用户的输入，候选的单词列出来（词库排序），看哪个是最好的（编辑距离最小—需要几个单位的操作； hang distance 二进制距离）</p><p>改进的方法是生成编辑距离为1，2 的字符串，过滤，返回（<font color=red>数据增强过滤-语言模型找概率最大的</font>）</p><p>怎么过滤：候选词然后用语言模型计算概率，找概率最大的。</p><p>给定字符串s，找出最有可能正确的字符串c</p><p>noisy chanel model</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200329-1.jpg"></p></li></ol><blockquote><p><font color=red>写错的概率和语言模型的概率，可以分别训练，然后融合模型</font></p><p>语言模型可以看成是先验概率</p></blockquote><h3 id="语法错误"><a href="#语法错误" class="headerlink" title="语法错误"></a>语法错误</h3><p>可以通过语言模型的方式解决，计算词组的概率</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;错误种类&quot;&gt;&lt;a href=&quot;#错误种类&quot; class=&quot;headerlink&quot; title=&quot;错误种类&quot;&gt;&lt;/a&gt;错误种类&lt;/h2&gt;&lt;h3 id=&quot;错别字&quot;&gt;&lt;a href=&quot;#错别字&quot; class=&quot;headerlink&quot; title=&quot;错别字&quot;&gt;&lt;/a&gt;错别
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>文本表示基础</title>
     <link href="http://yoursite.com/2020/03/29/%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E5%9F%BA%E7%A1%80/"/>
     <id>http://yoursite.com/2020/03/29/%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E5%9F%BA%E7%A1%80/</id>
     <published>2020-03-29T07:42:59.000Z</published>
-    <updated>2020-03-29T08:18:11.122Z</updated>
+    <updated>2020-03-29T15:10:21.640Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="segmentation-method"><a href="#segmentation-method" class="headerlink" title="segmentation method"></a>segmentation method</h1><h2 id="max-matching"><a href="#max-matching" class="headerlink" title="max matching"></a>max matching</h2><ol><li><p>Forward-max matching： 一种贪心算法</p><p>词典中每次匹配的单词的长度是最大的</p><blockquote><p>定义max-length, 逐渐匹配词典里的词，有匹配则划线分词</p></blockquote></li><li><p>backward-max matching： 与前向相反（90%是一样的）</p></li></ol><blockquote><p>缺点：（贪心算法）</p><ol><li>未必选择长度最大的是最优的</li><li>只是参考词典，没有考虑词的语义</li></ol></blockquote><blockquote><p>解决：设计算法，考虑语义（合成语义）</p><ol><li>不同的分割，哪种更好—-结合语言模型</li></ol></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="segmentation-method"><a href="#segmentation-method" class="headerlink" title="segmentation method"></a>segmentation method</h1><h2 id="max-matching"><a href="#max-matching" class="headerlink" title="max matching"></a>max matching</h2><ol><li><p>Forward-max matching： 一种贪心算法</p><p>词典中每次匹配的单词的长度是最大的</p><blockquote><p>定义max-length, 逐渐匹配词典里的词，有匹配则划线分词</p></blockquote></li><li><p>backward-max matching： 与前向相反（90%是一样的）</p></li></ol><blockquote><p>缺点：（贪心算法）</p><ol><li>未必选择长度最大的是最优的</li><li>只是参考词典，没有考虑词的语义</li></ol></blockquote><blockquote><p>解决：设计算法，考虑语义（合成语义）</p><ol><li>不同的分割，哪种更好—-结合语言模型, 不同句子的概率    n-gram</li><li>找出所有分割方式，希望可以在多项式时间内实现这个过程</li><li>输入—-所有分割—选择其中最好的（概率最大）</li></ol></blockquote><h2 id="？-inference—viterbi-estimation"><a href="#？-inference—viterbi-estimation" class="headerlink" title="？ inference—viterbi  estimation"></a>？ inference—viterbi  estimation</h2><p>假定每个词的概率已知</p><p>给定每个词的概率，寻找最短路径</p><p>Dp是循环的方式，所有的表填满计算  -log(p(x))（<font color=blue>最大变最小，乘变加</font>）</p><p><img src="/" alt="维特比算法" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/EF4CC2D5-B3AB-4380-8E1E-59C003CA3024.png"></p><blockquote><p> viterbi是一种dp</p><p> viterbi也用来做inference：</p><p>模型已知的情况下，预测隐变量？</p></blockquote><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
     
     <summary type="html">
     
