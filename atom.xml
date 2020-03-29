@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-29T07:44:45.480Z</updated>
+  <updated>2020-03-29T08:18:11.122Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,16 @@
     <link href="http://yoursite.com/2020/03/29/%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E5%9F%BA%E7%A1%80/"/>
     <id>http://yoursite.com/2020/03/29/%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E5%9F%BA%E7%A1%80/</id>
     <published>2020-03-29T07:42:59.000Z</published>
-    <updated>2020-03-29T07:44:45.480Z</updated>
+    <updated>2020-03-29T08:18:11.122Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="segmentation-method"><a href="#segmentation-method" class="headerlink" title="segmentation method"></a>segmentation method</h1><h2 id="max-matching"><a href="#max-matching" class="headerlink" title="max matching"></a>max matching</h2><ol><li><p>Forward-max matching： 一种贪心算法</p><p>词典中每次匹配的单词的长度是最大的</p><blockquote><p>定义max-length, 逐渐匹配词典里的词，有匹配则划线分词</p></blockquote></li><li><p>backward-max matching： 与前向相反（90%是一样的）</p></li></ol><blockquote><p>缺点：（贪心算法）</p><ol><li>未必选择长度最大的是最优的</li><li>只是参考词典，没有考虑词的语义</li></ol></blockquote><blockquote><p>解决：设计算法，考虑语义（合成语义）</p><ol><li>不同的分割，哪种更好—-结合语言模型</li></ol></blockquote>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;segmentation-method&quot;&gt;&lt;a href=&quot;#segmentation-method&quot; class=&quot;headerlink&quot; title=&quot;segmentation method&quot;&gt;&lt;/a&gt;segmentation method&lt;/h1&gt;&lt;h2 i
+      
     
     </summary>
     
