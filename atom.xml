@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-29T02:00:38.645Z</updated>
+  <updated>2020-03-29T07:44:45.480Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,91 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>文本表示基础</title>
+    <link href="http://yoursite.com/2020/03/29/%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/03/29/%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-03-29T07:42:59.000Z</published>
+    <updated>2020-03-29T07:44:45.480Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="nlp-深度之眼" scheme="http://yoursite.com/categories/nlp-%E6%B7%B1%E5%BA%A6%E4%B9%8B%E7%9C%BC/"/>
+    
+    
+      <category term="segmentation method" scheme="http://yoursite.com/tags/segmentation-method/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Adam</title>
+    <link href="http://yoursite.com/2020/03/29/Adam/"/>
+    <id>http://yoursite.com/2020/03/29/Adam/</id>
+    <published>2020-03-29T03:18:34.000Z</published>
+    <updated>2020-03-29T03:21:51.345Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="nlp-深度之眼" scheme="http://yoursite.com/categories/nlp-%E6%B7%B1%E5%BA%A6%E4%B9%8B%E7%9C%BC/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>读文章</title>
+    <link href="http://yoursite.com/2020/03/29/%E8%AF%BB%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2020/03/29/%E8%AF%BB%E6%96%87%E7%AB%A0/</id>
+    <published>2020-03-29T03:13:19.000Z</published>
+    <updated>2020-03-29T03:21:51.244Z</updated>
+    
+    <content type="html"><![CDATA[<p>题目摘要</p><p>介绍</p><p>别人的工作 有哪些不足，介绍自己工作</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;题目摘要&lt;/p&gt;
+&lt;p&gt;介绍&lt;/p&gt;
+&lt;p&gt;别人的工作 有哪些不足，介绍自己工作&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="nlp-深度之眼" scheme="http://yoursite.com/categories/nlp-%E6%B7%B1%E5%BA%A6%E4%B9%8B%E7%9C%BC/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>paper</title>
+    <link href="http://yoursite.com/2020/03/29/paper/"/>
+    <id>http://yoursite.com/2020/03/29/paper/</id>
+    <published>2020-03-29T03:12:55.000Z</published>
+    <updated>2020-03-29T03:12:55.923Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>第一章线性规划与单纯形法</title>
     <link href="http://yoursite.com/2020/03/29/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E4%B8%8E%E5%8D%95%E7%BA%AF%E5%BD%A2%E6%B3%95/"/>
     <id>http://yoursite.com/2020/03/29/%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E4%B8%8E%E5%8D%95%E7%BA%AF%E5%BD%A2%E6%B3%95/</id>
     <published>2020-03-29T00:54:03.000Z</published>
-    <updated>2020-03-29T02:00:38.645Z</updated>
+    <updated>2020-03-29T03:08:25.388Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="化标准型"><a href="#化标准型" class="headerlink" title="化标准型"></a>化标准型</h1><p>价值系数c，工艺或技术系数a，资源限制b，决策变量约束x</p><p>建模思路：</p><ol><li><p>确定决策变量—很重要很难</p></li><li><p>写出目标函数</p></li><li><p>找出约束条件</p></li></ol><p>线性规划的标准型：</p><ol><li>目标函数最大化： 若是最小化，则零目标函数前加符号，</li><li>约束条件等式：若是小于等于加上一个松弛变量，若是大于等于减去一个剩余变量</li><li>决策变量非负： 若小于等于0，替换变量，若无约束x’-x”</li><li>资源限量非负：两边加符号</li></ol><blockquote><p>松弛变量和剩余变量在实际问题中分别表示未被充分利用和超出的资源数， 均为转化为价值和利润，所以引入模型后它们在目标函数中的系数为0</p><p>化标准型是单纯化求解的基础</p></blockquote><h2 id="图解法"><a href="#图解法" class="headerlink" title="图解法"></a>图解法</h2><p>可行域，目标函数z平移</p><p><img src="/" alt="图解法" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/%E5%9B%BE%E8%A7%A3%E6%B3%95.png"></p><h2 id="单纯形法"><a href="#单纯形法" class="headerlink" title="单纯形法"></a>单纯形法</h2><h3 id="单纯形法的原理"><a href="#单纯形法的原理" class="headerlink" title="单纯形法的原理"></a>单纯形法的原理</h3><blockquote><p>可行解 满足约束条件的所有解–可行域</p></blockquote><p><img src="/" alt="概念" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/%E9%97%AE%E9%A2%98%E8%A7%A3%E7%9A%84%E6%A6%82%E5%BF%B5.png"></p><p><img src="/" alt="可行基" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/A0CE8255-ED99-489F-9008-63B2B77DBA77.png"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="化标准型"><a href="#化标准型" class="headerlink" title="化标准型"></a>化标准型</h1><p>价值系数c，工艺或技术系数a，资源限制b，决策变量约束x</p><p>建模思路：</p><ol><li><p>确定决策变量—很重要很难</p></li><li><p>写出目标函数</p></li><li><p>找出约束条件</p></li></ol><p>线性规划的标准型：</p><ol><li>目标函数最大化： 若是最小化，则零目标函数前加符号，</li><li>约束条件等式：若是小于等于加上一个松弛变量，若是大于等于减去一个剩余变量</li><li>决策变量非负： 若小于等于0，替换变量，若无约束x’-x”</li><li>资源限量非负：两边加符号</li></ol><blockquote><p>松弛变量和剩余变量在实际问题中分别表示未被充分利用和超出的资源数， 均为转化为价值和利润，所以引入模型后它们在目标函数中的系数为0</p><p>化标准型是单纯化求解的基础</p></blockquote><h2 id="图解法"><a href="#图解法" class="headerlink" title="图解法"></a>图解法</h2><p>可行域，目标函数z平移</p><p><img src="/" alt="图解法" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/%E5%9B%BE%E8%A7%A3%E6%B3%95.png"></p><h2 id="单纯形法"><a href="#单纯形法" class="headerlink" title="单纯形法"></a>单纯形法</h2><h3 id="单纯形法的原理"><a href="#单纯形法的原理" class="headerlink" title="单纯形法的原理"></a>单纯形法的原理</h3><blockquote><p>可行解 满足约束条件的所有解–可行域</p></blockquote><p><img src="/" alt="概念" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/%E9%97%AE%E9%A2%98%E8%A7%A3%E7%9A%84%E6%A6%82%E5%BF%B5.png"></p><p><img src="/" alt="可行基" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/A0CE8255-ED99-489F-9008-63B2B77DBA77.png"></p><h3 id="几点结论："><a href="#几点结论：" class="headerlink" title="几点结论："></a>几点结论：</h3><ol><li>可行域若有界则是凸集，也可能是无界域</li><li>每个基可行解对应可行域的一个顶点</li><li>可行域有有限多个顶点</li><li>如果有最优解，必在某个顶点上得到</li></ol><p><img src="/" alt="解之间的关系" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/E80FFD0A-B5A1-4851-90C2-CB5998FF81A4.png"></p><h3 id="单纯形法迭代原理"><a href="#单纯形法迭代原理" class="headerlink" title="单纯形法迭代原理"></a>单纯形法迭代原理</h3><p><img src="/" alt="基变换" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/E3583982-A80E-4D6B-9760-99015E7E6B1C.png"></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/E3583982-A80E-4D6B-9760-99015E7E6B1C.png"></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/E3583982-A80E-4D6B-9760-99015E7E6B1C.png"></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/643304D9-2806-422C-BBD5-4F920F1C29F5.png"></p>]]></content>
     
     <summary type="html">
     
