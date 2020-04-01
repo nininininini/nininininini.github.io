@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-29T15:47:06.087Z</updated>
+  <updated>2020-04-01T03:06:15.321Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,150 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>QA</title>
+    <link href="http://yoursite.com/2020/04/01/QA/"/>
+    <id>http://yoursite.com/2020/04/01/QA/</id>
+    <published>2020-04-01T03:00:47.000Z</published>
+    <updated>2020-04-01T03:06:15.321Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h1><ol><li>计算问题与库里问题的相似度，怎样表示，怎样评估相似度</li></ol><p>倒排表：有可能相似度很高的，再比较相似度</p><p>过滤掉没有用的Q</p><p>3 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;计算&quot;&gt;&lt;a href=&quot;#计算&quot; class=&quot;headerlink&quot; title=&quot;计算&quot;&gt;&lt;/a&gt;计算&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;计算问题与库里问题的相似度，怎样表示，怎样评估相似度&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;倒排表：有可能相似度很高的，再比较相似度&lt;/p
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>EM</title>
+    <link href="http://yoursite.com/2020/04/01/EM/"/>
+    <id>http://yoursite.com/2020/04/01/EM/</id>
+    <published>2020-04-01T02:59:40.000Z</published>
+    <updated>2020-04-01T02:59:40.087Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>文本匹配</title>
+    <link href="http://yoursite.com/2020/04/01/%E6%96%87%E6%9C%AC%E5%8C%B9%E9%85%8D/"/>
+    <id>http://yoursite.com/2020/04/01/%E6%96%87%E6%9C%AC%E5%8C%B9%E9%85%8D/</id>
+    <published>2020-04-01T01:32:52.000Z</published>
+    <updated>2020-04-01T02:59:05.849Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h1><ol><li><p>搜索排序</p></li><li><p>客服机器人。很多意图，反馈信息</p><p>从库中找最相似的问题回答</p></li><li><p>机器翻译  衡量句子语义的相似性</p></li><li><p>推荐系统。画像和库中文本比对，推荐排位最高的</p></li></ol><h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="string-based"><a href="#string-based" class="headerlink" title="string-based"></a>string-based</h2><p>最长公共子串-LCS</p><h2 id="edit-distance"><a href="#edit-distance" class="headerlink" title="edit distance"></a>edit distance</h2><p>把一串变另外一串的工作量</p><h2 id="Jaro-相似"><a href="#Jaro-相似" class="headerlink" title="Jaro 相似"></a>Jaro 相似</h2><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200401-3.jpg"></p><h2 id="欧式距离"><a href="#欧式距离" class="headerlink" title="欧式距离"></a>欧式距离</h2><h2 id="余弦距离-两个的角度z"><a href="#余弦距离-两个的角度z" class="headerlink" title="余弦距离  两个的角度z"></a>余弦距离  两个的角度z</h2><h2 id="逐点互信息"><a href="#逐点互信息" class="headerlink" title="逐点互信息"></a>逐点互信息</h2><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200401-4.jpg"></p><blockquote><p>两个的信息相关性多大</p></blockquote><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200401-5.jpg"></p><p>字符</p><p>利用全局的量</p><h2 id="单语义文本匹配"><a href="#单语义文本匹配" class="headerlink" title="单语义文本匹配"></a>单语义文本匹配</h2><p>NN，各个句子映射为不同的向量，句子之间没有交互</p><h2 id="多语义文档表达"><a href="#多语义文档表达" class="headerlink" title="多语义文档表达"></a>多语义文档表达</h2><p>从更多粒度衡量相似性</p><p>匹配之前大量交互—局部相似度，不会丢失局部信息</p><p>互相位置运算</p><h2 id="做文档匹配遇到的问题"><a href="#做文档匹配遇到的问题" class="headerlink" title="做文档匹配遇到的问题"></a>做文档匹配遇到的问题</h2><ol><li><p>是否是同性质的文档</p><p>是从不同的问题中找和从不同答案中找</p><p>不同的问题的话需要参数共享  问题和答案匹配的话参数不应该共享</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;应用场景&quot;&gt;&lt;a href=&quot;#应用场景&quot; class=&quot;headerlink&quot; title=&quot;应用场景&quot;&gt;&lt;/a&gt;应用场景&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;搜索排序&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;客服机器人。很多意图，反馈信息&lt;/p&gt;
+&lt;p&gt;从库中找最相似的
+      
+    
+    </summary>
+    
+    
+      <category term="nlp" scheme="http://yoursite.com/categories/nlp/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>read-papers</title>
+    <link href="http://yoursite.com/2020/03/31/read-papers/"/>
+    <id>http://yoursite.com/2020/03/31/read-papers/</id>
+    <published>2020-03-30T23:36:42.000Z</published>
+    <updated>2020-04-01T01:22:55.436Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="mining-and-summarizing-customer"><a href="#mining-and-summarizing-customer" class="headerlink" title="mining and summarizing customer"></a>mining and summarizing customer</h1><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><ol><li>提出解决方案</li><li>比较不同</li></ol><h2 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h2><p>前言</p><blockquote><p>对abstract的扩充</p></blockquote><ol><li>展开解决方案</li><li>详细创新点</li><li>详细各执行步骤</li></ol><h1 id="related-work"><a href="#related-work" class="headerlink" title="related work"></a>related work</h1><h1 id="method"><a href="#method" class="headerlink" title="method"></a>method</h1><ol><li><p>POS</p><p>fuzzy matching — word variants  misspelling</p></li><li><p>frequent features identification</p><p>显性特征提取，隐性不能</p></li><li><p>opinion words extration</p><p>情感与语境相关</p></li><li><p>orientation identification</p><p>基于规则</p><p>wordNet  每个词打情感标签</p></li><li><p>抽取不常见属性—规则—名词</p><p>属性词和情感词都抽取</p></li></ol><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="pros"><a href="#pros" class="headerlink" title="pros"></a>pros</h3><ol><li>提出了一个新任务</li><li>建立有效的系统</li></ol><h3 id="cons"><a href="#cons" class="headerlink" title="cons"></a>cons</h3><ol><li><p>只考虑显性的</p></li><li><p>人工规则</p></li><li><p>没有解决介词</p></li></ol><h1 id="sentiment-analysis-by-capsules"><a href="#sentiment-analysis-by-capsules" class="headerlink" title="sentiment analysis by capsules"></a>sentiment analysis by capsules</h1><h2 id="motivation"><a href="#motivation" class="headerlink" title="motivation"></a>motivation</h2><ol><li><p>nn依赖文本表示</p></li><li><p>语言学知识需要引入进来</p><h1 id="model"><a href="#model" class="headerlink" title="model"></a>model</h1><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200401-0.jpg"></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200401-1.jpg"></p><h2 id="contribution"><a href="#contribution" class="headerlink" title="contribution"></a>contribution</h2></li><li><p>提出了一个基于capsule的模型</p></li><li><p>不需要语言学知识可以达到很好的效果</p></li><li><p>实验显示鲁棒性</p></li></ol><h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><p>   <img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200401-2.jpg"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;mining-and-summarizing-customer&quot;&gt;&lt;a href=&quot;#mining-and-summarizing-customer&quot; class=&quot;headerlink&quot; title=&quot;mining and summarizing custome
+      
+    
+    </summary>
+    
+    
+      <category term="read paper" scheme="http://yoursite.com/categories/read-paper/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>glove-elmo</title>
+    <link href="http://yoursite.com/2020/03/30/glove-elmo/"/>
+    <id>http://yoursite.com/2020/03/30/glove-elmo/</id>
+    <published>2020-03-30T06:34:47.000Z</published>
+    <updated>2020-03-30T15:01:27.017Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="词向量"><a href="#词向量" class="headerlink" title="词向量"></a>词向量</h1><h2 id="LSA"><a href="#LSA" class="headerlink" title="LSA"></a>LSA</h2><p>信息检索模型，分析文本中出现词的情况，提取出次与此之间潜在的语义结构，用这种潜在的予以结构表示词和文本（消除词之间的相关性以及简化文本向量实现降维）</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-10.jpg"></p><p>奇异值分解—降维</p><p>LSA—-LDA</p><h2 id="word2vec"><a href="#word2vec" class="headerlink" title="word2vec"></a>word2vec</h2><p>LSA缺少语境 只考虑在不在同一篇文档</p><p>Word2vec缺少统计信息</p><p>既考虑语境也考虑统计信息—glove</p><h2 id="glove-wi词向量"><a href="#glove-wi词向量" class="headerlink" title="glove   wi词向量"></a>glove   wi词向量</h2><p><a href="https://blog.csdn.net/weixin_36711901/article/details/78508798" target="_blank" rel="noopener">glove理解</a></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-11.jpg"></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-12.jpg"></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-13.jpg"></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-14.jpg"></p><h2 id="elmo"><a href="#elmo" class="headerlink" title="elmo"></a>elmo</h2><h3 id="预训练词向量需要考虑两个方面"><a href="#预训练词向量需要考虑两个方面" class="headerlink" title="预训练词向量需要考虑两个方面"></a>预训练词向量需要考虑两个方面</h3><ol><li>词的复杂特征—语法和语义</li><li>不同的文本词向量不一样</li></ol><p>语言模型：判断一句话像不像人话</p><blockquote><p>神经概率语言模型—利用神经网络来对语言模型进行建模pytorch</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;词向量&quot;&gt;&lt;a href=&quot;#词向量&quot; class=&quot;headerlink&quot; title=&quot;词向量&quot;&gt;&lt;/a&gt;词向量&lt;/h1&gt;&lt;h2 id=&quot;LSA&quot;&gt;&lt;a href=&quot;#LSA&quot; class=&quot;headerlink&quot; title=&quot;LSA&quot;&gt;&lt;/a&gt;LSA&lt;/h
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>noisy-channel-model-语言模型</title>
+    <link href="http://yoursite.com/2020/03/30/noisy-channel-model-%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://yoursite.com/2020/03/30/noisy-channel-model-%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</id>
+    <published>2020-03-30T01:36:30.000Z</published>
+    <updated>2020-03-30T06:34:27.408Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-2.jpg"></p><h2 id="LM-语言模型用来判断是否一句话从语法上通顺"><a href="#LM-语言模型用来判断是否一句话从语法上通顺" class="headerlink" title="LM : 语言模型用来判断是否一句话从语法上通顺"></a>LM : 语言模型用来判断是否一句话从语法上通顺</h2><p>根据模型参数可以计算出概率 </p><p>chain rule for LM</p><h3 id="Markov-assumption—-减少复杂度"><a href="#Markov-assumption—-减少复杂度" class="headerlink" title="Markov assumption—-减少复杂度"></a>Markov assumption—-减少复杂度</h3><ol><li><p>只考虑最相近的信息，基于太远的信息影响对当前信息影响不大</p></li><li><p>bigram, trigram, 4-gram</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-3.jpg"></p></li></ol><h3 id="LSTM-从前往后，不能理解一个词在前后的意思（X-Net）"><a href="#LSTM-从前往后，不能理解一个词在前后的意思（X-Net）" class="headerlink" title="LSTM 从前往后，不能理解一个词在前后的意思（X-Net）"></a>LSTM 从前往后，不能理解一个词在前后的意思（X-Net）</h3><blockquote><p><font color=red>CRF前后都考虑</font></p></blockquote><p>unigram 不考虑上下文信息，两个句子顺序不同概率一样</p><p>n-gram 会有稀疏问题——解决：分布表示（深度学习）</p><p>训练时统计的过程</p><p>思考：不放在特定的任务中验证语言模型的好坏？</p><p>评估语言模型</p><p>perplexity： 大于0的一个值</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-4.jpg"></p><p>信息混淆程度，越小越好</p><p><font color=red>为什么2次方？当前模型去离合测试集的不确定性大小？</font></p><p><font color=blue>LDA也可以计算perplexity，生成式的都可以计算perplexity</font></p><p>个别概率为0，导致整个概率为0—-需要smoothing</p><p>训练集中不存在不确定测试集中不出现—我看到的不一定是我知道所有东西。</p><h2 id="smoothing—–统计得到"><a href="#smoothing—–统计得到" class="headerlink" title="smoothing—–统计得到"></a>smoothing—–统计得到</h2><ol><li><p>Add-one smoothing—laplace smoothing</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-5.jpg"></p><p>加v保证概率和为1</p></li><li><p>Add-k smoothing</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-6.jpg"></p></li><li><p>interpolation</p><p>unigram 的信息也很重要，既要考虑bigram也要考虑unigram</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-7.jpg"></p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-8.jpg"></p></li><li><p>Good-turning smoothing</p><p>给定可能出现的词一定的概率，所以要变化已有词的概率</p><p>N1：出现一次的单词个数</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-9.jpg"></p></li></ol><blockquote><p>不存在的用模型预测值</p><p><font color=red>平滑可以看成是贝叶斯的特例</font></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/&quot; alt=&quot;&quot; class=&quot;lazyload&quot; data-src=&quot;/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-2.jpg&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;LM-语言模型用来判断是否一句话从语法上通顺&quot;&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>句子相似度</title>
     <link href="http://yoursite.com/2020/03/29/%E5%8F%A5%E5%AD%90%E7%9B%B8%E4%BC%BC%E5%BA%A6/"/>
     <id>http://yoursite.com/2020/03/29/%E5%8F%A5%E5%AD%90%E7%9B%B8%E4%BC%BC%E5%BA%A6/</id>
     <published>2020-03-29T15:38:13.000Z</published>
-    <updated>2020-03-29T15:47:06.087Z</updated>
+    <updated>2020-04-01T03:00:35.305Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="句子相似度"><a href="#句子相似度" class="headerlink" title="句子相似度"></a>句子相似度</h1><ol><li><p>余弦相似度</p></li><li><p>欧式距离</p></li><li><p>绝对距离</p></li><li><p>minkobxki pister   p次方 1/p</p></li><li><p>mahalanlkis distance   映射到另外一个空间，转换的方法是线性的</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200329-3.jpg"></p></li><li><p>kernel distance：  kernal funtion 之后的距离</p></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="句子相似度"><a href="#句子相似度" class="headerlink" title="句子相似度"></a>句子相似度</h1><ol><li><p>余弦相似度</p></li><li><p>欧式距离</p></li><li><p>绝对距离</p></li><li><p>minkobxki pister   p次方 1/p</p></li><li><p>mahalanlkis distance   映射到另外一个空间，转换的方法是线性的</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200329-3.jpg"></p></li><li><p>kernel distance：  kernal funtion 之后的距离</p></li></ol><p>TF-IDF</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200330-0.jpg"></p><h2 id="词之间的相似度"><a href="#词之间的相似度" class="headerlink" title="词之间的相似度"></a>词之间的相似度</h2><blockquote><ol><li><p>one-hot 是无法计算词之间的相似度—–所以用到词向量的方法（distributed representation）</p></li><li><p>使用词向量的方法表示后就可以用余弦相似度来计算两个词之间的相似度了</p></li><li><p>分布式表示（词向量）</p><p>单词—向量   句子—向量  网络—向量  代码模块—向量    <font color=blue>embedding</font></p></li><li><p>学习词向量</p><p>. 不考虑上下文        glove， skip-gram</p><p>. 考虑上下文的        context-aware—bert， elmo</p></li><li><p>有了词向量之后可以画图</p><p><font color=red>T-SNE算法  降维</font>   </p><p><font color=red>欧式空间，黎曼空间中学习</font></p></li></ol></blockquote>]]></content>
     
     <summary type="html">
     
@@ -99,33 +236,6 @@
     <updated>2020-03-29T03:21:51.345Z</updated>
     
     <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="nlp-深度之眼" scheme="http://yoursite.com/categories/nlp-%E6%B7%B1%E5%BA%A6%E4%B9%8B%E7%9C%BC/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>读文章</title>
-    <link href="http://yoursite.com/2020/03/29/%E8%AF%BB%E6%96%87%E7%AB%A0/"/>
-    <id>http://yoursite.com/2020/03/29/%E8%AF%BB%E6%96%87%E7%AB%A0/</id>
-    <published>2020-03-29T03:13:19.000Z</published>
-    <updated>2020-03-29T03:21:51.244Z</updated>
-    
-    <content type="html"><![CDATA[<p>题目摘要</p><p>介绍</p><p>别人的工作 有哪些不足，介绍自己工作</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;题目摘要&lt;/p&gt;
-&lt;p&gt;介绍&lt;/p&gt;
-&lt;p&gt;别人的工作 有哪些不足，介绍自己工作&lt;/p&gt;
-
-      
     
     </summary>
     
