@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-01T03:06:15.321Z</updated>
+  <updated>2020-04-10T13:15:17.164Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,83 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git 仓库管理知识</title>
+    <link href="http://yoursite.com/2020/04/10/git/"/>
+    <id>http://yoursite.com/2020/04/10/git/</id>
+    <published>2020-04-10T12:06:22.000Z</published>
+    <updated>2020-04-10T13:15:17.164Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="git知识点"><a href="#git知识点" class="headerlink" title="git知识点"></a>git知识点</h1><ol><li><p>git:  版本控制工具</p></li><li><p>历史：cvs–svn   集中式的版本控制系统，需要中央服务器  最大的弊端是必须联网才能使用，速度慢，使用受限</p><p>​            git  分布式版本控制</p><p>github网站为开源项目免费提供git存储。 没有中央服务器，每个电脑都可以是一个完整的版本库，多人工作只需要把修改的推送给对方就可以</p><p>git 运行方式如图：</p><p><img src="/" alt="" class="lazyload" data-src="https://img-blog.csdn.net/20180903205936893?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1paUUhFTExPMjAxOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p></li><li><p>工作区和暂存区</p><ul><li>git与其他版本控制系统的一个区别就是有暂存区的概念</li></ul><blockquote><p>工作区: 本地电脑目录</p><p>版本库：工作区隐藏目录.git, 不算工作区，而是git的版本库，其中最重要的就是暂存区（stage/index）, 还有git为我们主动创建的第一个分支master，以及指向master的一个指针（HEAD）</p></blockquote><ul><li>把文件往git版本库中添加的时候，分两步执行：</li></ul><blockquote><p>第一步：用 git add 把文件添加进去，实际上是把文件修改添加到暂存区</p><p>第二步： git commit 提交更改，实际上是把暂存区的所有内容提交到当前分支。即往master分支上提交更改。需要提交的文件修改通通放到暂存区， 然后一次性提交暂存区的所有修改到master。</p></blockquote></li><li><p>常用git服务器</p><p>github–全球最大的开源网站</p><p>码云–免费的，国内的</p><p>Coding–国内的</p></li><li><p>安装git     git –version查看版本库</p></li></ol><h1 id="git操作"><a href="#git操作" class="headerlink" title="git操作"></a>git操作</h1><ol><li><p>github上创建仓库，创建成功会生成一个网址</p></li><li><p><font color=red>获取项目-从服务器（ 云端）获取项目到本地</font></p></li><li><blockquote><p>git clone https地址====将仓库克隆到本地</p></blockquote></li><li><p>创建ssh密匙：为了保证安全性，只有具有密匙的管理员才可上传，其他人只可以下载</p><p>本地公匙粘贴到github账户setting下的 SSH and GPG keys</p></li><li><p><font color=red>将远端仓库添加到本地</font>：</p><blockquote><p>git remote add origin +url地址**======关联远端仓库(origin是默认的)</p></blockquote></li><li><p><font color=red>下拉项目更新本地</font>：</p><blockquote><p>git pull   — 从服务器更新代码</p></blockquote></li><li><p>本地推送到服务器： 现在本地创建版本库/仓库</p><blockquote><p>切换到本地仓库目录</p><p>git init   —初始化git 仓库，将这个目录可以变成仓库</p><p>git add 文件名 — 添加指定文件  (或者 git add .   —添加所有文件</p><p>git status  —查看当期那状态</p><p>git commit -m ‘我写的内容的原因‘   —提交文件，必须写不然不能推送   </p><p>git push 仓库url   或者 git push 项目默认名字 master  （例如：git push <a href="https://github.com/code369/git-test）" target="_blank" rel="noopener">https://github.com/code369/git-test）</a>    —推送文件到服务器</p></blockquote><p>如果出现push报错  可以用下面的语句</p><p><img src="/" alt="" class="lazyload" data-src="https://img-blog.csdnimg.cn/20191115170938967.png"></p><blockquote><p> git pull origin master –allow-unrelated-histories </p></blockquote></li><li><p>配置免密码推送</p><p>在网站上创建项目的时候有两种方式https 和ssh</p><ul><li><p>https 方式</p><blockquote><ol><li><p>cd ~ </p></li><li><p>vi .git-credentials     在里面写入  https://{username}:{password}@github.net </p></li><li><p>git config –global credential.helper store</p></li></ol></blockquote></li><li><p>ssh 方式</p><blockquote><ol><li>使用 ssh-keygen 生成公钥和私钥，直接按3个回车即可 </li><li>在  ~/.ssh/id_rsa.pub 里面的内容复制到coding上面的个人设置公钥中 </li><li>git clone <a href="mailto:git@git.coding.net">git@git.coding.net</a>:phpmonkey/hehe.git  即可</li></ol></blockquote></li></ul></li><li><p>冲突解决</p><blockquote><p>git pull      先下拉文件   （先服务器更新）</p><p>git diff       查看冲突</p><p>git push    服务器合并</p></blockquote></li><li><p>分支学习</p><blockquote><p>主分支：master，默认分支<br>新建分支： git branch 分支名<br>查看分支： git branch<br>切换分支： git checkout 分支名<br>（实际项目中，每个人都要在自己的分支上工作，最后再合并到如果要在master<br>上面合并分支，需要先切回到master（master是默认的主目录）</p><p>合并分支： git merge +分支名字<br>删除分支：git branch -d +分支名<br>（如果分支没有合并不能删除）<br>强制删除: git branch  -D +分支名字<br>（如果分支没有合并要删除可以使用）</p></blockquote></li><li><p>开发步骤</p><blockquote><p>（1）新建一个dev </p><p>（2）切换到dev进行开发 </p><p>（3）在dev添加文件并且提交文件 </p><p>（4）切换到master分支 </p><p>（5）将dev分支合并到master分支   git merge dev </p><p>（6）推送master到服务端 </p><p>（7）继续切换到dev进行开发</p></blockquote></li><li><p>git 常用操作小节</p><blockquote><p>git init    =====  建仓库， 初始化Git仓库</p><p>git add 说明.txt  =====     把文件（这里指“说明.txt”)纳入暂存区(还没有真正纳入版本控制，需要再一步确认)</p><p>git status =======查看暂存区状态</p><p>git commit  -m ‘…’  提交纳入仓库（要写原因所以要加 -m）====git commit  -m  “说明内容”</p><p>注意：第一次提交需要先提交姓名和邮箱，否则会报错</p><p>git log  ===== 查看提交日志</p><p>git  checkout  - -  ====删除文件还原：</p><p>git reset  – hard     =====版本号码（至少写五位)       回到历史版本号版本</p><p>git reflog    =======   回到删除的未来版本（过去将来时）</p></blockquote></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;git知识点&quot;&gt;&lt;a href=&quot;#git知识点&quot; class=&quot;headerlink&quot; title=&quot;git知识点&quot;&gt;&lt;/a&gt;git知识点&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;git:  版本控制工具&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;历史：cvs–svn   集中
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据增强方法2020</title>
+    <link href="http://yoursite.com/2020/04/06/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E6%96%B9%E6%B3%952020/"/>
+    <id>http://yoursite.com/2020/04/06/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E6%96%B9%E6%B3%952020/</id>
+    <published>2020-04-06T13:01:10.000Z</published>
+    <updated>2020-04-06T13:10:52.071Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/quincyliang/nlp-data-augmentation" target="_blank" rel="noopener">数据增强方法仓库</a></p><h1 id="motivation"><a href="#motivation" class="headerlink" title="motivation"></a>motivation</h1><p>人工扩展数据集</p><h1 id="problem"><a href="#problem" class="headerlink" title="problem"></a>problem</h1><p>生成数据集和真实数据之间的差异—噪声</p><h1 id="基于深度学习的数据增强方法"><a href="#基于深度学习的数据增强方法" class="headerlink" title="基于深度学习的数据增强方法"></a>基于深度学习的数据增强方法</h1><ol><li>特征空间增强</li></ol><p>神经网络可以将图像这种高维向量映射为低维向量，之前讨论的所有图像数据增强方法都应用于输入空间中的图像。现在可以在特征空间进行数据增强操作，例如：SMOTE算法，它是一种流行的增强方法，通过将k个最近的邻居合并以形成新实例来缓解类不平衡问题。</p><ol start="2"><li>对抗生成</li></ol><p>对抗攻击表明，图像表示的健壮性远不及预期的健壮性，Moosavi-Dezfooli等人充分证明了这一点。对抗生成可以改善学习的决策边界中的薄弱环节，提高模型的鲁棒性。</p><ol start="3"><li><p>基于GAN的数据增强</p><p>使用 GAN 生成模型来生成更多的数据，可用作解决类别不平衡问题的过采样技术。</p></li><li><p>神经风格转换</p><p>通过神经网络风格迁移来生成不同风格的数据，防止模型过拟合。</p></li></ol><p>nlp</p><p>在自然语言处理领域，被验证为有效的数据增强算法相对要少很多，下面我们介绍几种常见方法。</p><ul><li><p><strong>同义词词典</strong>（Thesaurus）：Zhang Xiang等人提出了Character-level Convolutional Networks for Text Classification，通过实验，他们发现可以将单词替换为它的同义词进行数据增强，这种同义词替换的方法可以在很短的时间内生成大量的数据。</p></li><li><p><strong>随机插入</strong>（Randomly Insert）：随机选择一个单词，选择它的一个同义词，插入原句子中的随机位置，举一个例子：“我爱中国” —&gt; “喜欢我爱中国”。</p></li><li><p><strong>随机交换</strong>（Randomly Swap）：随机选择一对单词，交换位置。</p></li><li><p><strong>随机删除</strong>（Randomly Delete）：随机删除句子中的单词。</p></li><li><p><strong>语法树结构替换</strong>：通过语法树结构，精准地替换单词。</p></li><li><p><strong>加噪</strong>（NoiseMix） (<a href="https://github.com/noisemix/noisemix)：类似于图像领域的加噪，NoiseMix提供9种单词级别和2种句子级别的扰动来生成更多的句子，例如：这是一本很棒的书，但是他们的运送太慢了。-&gt;这是本很棒的书，但是运送太慢了。" target="_blank" rel="noopener">https://github.com/noisemix/noisemix)：类似于图像领域的加噪，NoiseMix提供9种单词级别和2种句子级别的扰动来生成更多的句子，例如：这是一本很棒的书，但是他们的运送太慢了。-&gt;这是本很棒的书，但是运送太慢了。</a></p></li><li><p><strong>情境增强</strong>（Contextual Augmentation）：这种数据增强算法是用于文本分类任务的独立于域的数据扩充。通过用标签条件的双向语言模型预测的其他单词替换单词，可以增强监督数据集中的文本。</p></li><li><p><strong>生成对抗网络</strong>：利用生成对抗网络的方法来生成和原数据同分布的数据，来制造更多的数据。在自然语言处理领域，有很多关于生成对抗网络的工作：</p></li><li><ul><li>Generating Text via Adversarial Training</li><li>GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution</li><li>SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient</li></ul></li><li><p><strong>回译技术</strong>（Back Translation）：回译技术是NLP在机器翻译中经常使用的一个数据增强的方法。其本质就是快速产生一些翻译结果达到增加数据的目的。回译的方法可以增加文本数据的多样性，相比替换词来说，有时可以改变句法结构等，并保留语义信息。但是，回译的方法产生的数据严重依赖于翻译的质量。</p></li><li><p><strong>扩句-缩句-句法</strong>：先将句子压缩，得到句子的缩写，然后再扩写，通过这种方法生成的句子和原句子具有相似的结构，但是可能会带来语义信息的损失。</p></li><li><p><strong>无监督数据扩增</strong>（Unsupervised Data Augmentation）：通常的数据增强算法都是为有监督任务服务，这个方法是针对无监督学习任务进行数据增强的算法，UDA方法生成无监督数据与原始无监督数据具备分布的一致性，而以前的方法通常只是应用高斯噪声和Dropout噪声（无法保证一致性）。(<a href="https://arxiv.org/abs/1904.12848" target="_blank" rel="noopener">https://arxiv.org/abs/1904.12848</a>)</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/quincyliang/nlp-data-augmentation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;数据增强方法仓库&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;motivation&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HMM</title>
+    <link href="http://yoursite.com/2020/04/01/HMM/"/>
+    <id>http://yoursite.com/2020/04/01/HMM/</id>
+    <published>2020-04-01T05:31:59.000Z</published>
+    <updated>2020-04-01T05:42:19.078Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Graphical model</p><ol><li><p>Directed graphical model — HMM， MEMM   有方向可以刻画出依赖关系     可以刻画条件对的一些性质</p></li><li><p>Undirectied graphical model —CRF  LINEAR-CRF(sequence data)    &lt;—– LOG-LINEAR MODEL（static data—-logistic regression）</p><p>两者EM</p></li></ol></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;Graphical model&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Directed graphical model — HMM， MEMM   有方向可以刻画出依赖关系     可以刻画条件对的一些性质&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Undire
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>QA</title>
@@ -46,9 +123,16 @@
     <link href="http://yoursite.com/2020/04/01/EM/"/>
     <id>http://yoursite.com/2020/04/01/EM/</id>
     <published>2020-04-01T02:59:40.000Z</published>
-    <updated>2020-04-01T02:59:40.087Z</updated>
+    <updated>2020-04-01T14:19:31.859Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="latent-variable-model"><a href="#latent-variable-model" class="headerlink" title="latent variable model"></a>latent variable model</h1><blockquote><p>看不到的物体的本质</p><p>隐含信息可以生成出来</p><p>生成—VAE</p></blockquote><p>有隐的特征生成看的见得东西</p><p><img src="/" alt="" class="lazyload" data-src="/Users/doouni/qq%E5%9B%BE%E7%89%87/QQ20200401-6.jpg"></p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;latent-variable-model&quot;&gt;&lt;a href=&quot;#latent-variable-model&quot; class=&quot;headerlink&quot; title=&quot;latent variable model&quot;&gt;&lt;/a&gt;latent variable model&lt;/
+      
     
     </summary>
     
